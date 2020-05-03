@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+#include<conio.h>
+main()
+{
+ float a,b,p;
+ cout<<"enter two numbers\n";
+ cin>>a>>b;
+ p=a*b;
+ cout<<product=<<p;
+}
