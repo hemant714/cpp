@@ -3,9 +3,11 @@ using namespace std;
 int prime(int f);
 main()
 {
-int n,k=0,a[]={0},i,j,count,b,c;
+int n,k=0,,i,j,count,b,c;
+//number that u want to be print as sum of two primary numbers
 cout<<"Enter a number :";
 cin>>n;
+//for finding prime numbers
 for(j=1;j<=n/2;j++)
 {
 count=0;
@@ -18,10 +20,10 @@ count=0;
    }
    if(count==2)
    {
-       b=n-j;
+       b=n-j;//check num-primary number is also primary or not
       c= prime(b);
       if(c==1)
-        cout<<n<<"="<<j<<"+"<<b<<endl;
+        cout<<n<<"="<<j<<"+"<<b<<endl;//print if num-primary is also primary number
 
    }
 }
